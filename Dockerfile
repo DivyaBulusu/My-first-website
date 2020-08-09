@@ -2,7 +2,7 @@
 FROM ubuntu:latest
 
 # ADD my project to the workspace
-ADD myfirstwebsite /var/www/html/
+ADD My-first-website /var/www/html/
 
 # start apache2 service
 CMD apachectl -D FOREGROUND

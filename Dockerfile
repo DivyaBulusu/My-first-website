@@ -8,4 +8,4 @@ ADD My-first-website /var/www/html/
 CMD apachectl -D FOREGROUND
 
 # remove the default index file
-RUN rm /var/www/html/index.html
+# RUN rm /var/www/html/index.html

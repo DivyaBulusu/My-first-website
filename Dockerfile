@@ -1,5 +1,5 @@
 # Pull latest Apache docker image
-FROM httpd:2.4
+FROM https://hub.docker.com/_/ubuntu:latest
 
 # ADD my project to the workspace
 ADD myfirstwebsite /var/www/html/

@@ -1,11 +1,10 @@
 # Pull latest Apache docker image
 FROM ubuntu:latest
-
+RUN apt-get update
+RUN apt-get install nginx -y
 # ADD my project to the workspace
-ADD My-first-website /var/www/html/
+COPY index.html My-first-website /var/www/html/
 
-# start apache2 service
-CMD apachectl -D FOREGROUND
+EXPOSE 80
 
-# remove the default index file
-RUN rm /var/www/html/index.html
+CMD ["nginx","-g","daemon off;"]
